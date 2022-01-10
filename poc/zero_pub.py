@@ -7,12 +7,12 @@ pub =  b"@"+ b"\x00" * 47
 #Zero signature
 sig = b"@"  + b"\x00" * 95
 
-print(bls_pop.KeyValidate(pub))
-print(bls_pop.Verify(pub, message, sig))
+print(bls_pop._is_valid_pubkey(pub))
+print("KeyValidate:" ,bls_pop.KeyValidate(pub))
+print("Verify: ",bls_pop.Verify(pub, message, sig))
 
 
 # ===================================
-
 
 
 

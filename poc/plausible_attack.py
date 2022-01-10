@@ -36,7 +36,7 @@ blk3 = b"Thanh Thuy version 3"
 
 #All nodes receive only 1 aggregate signature agg_sig from the aggregator, but the accept 3 different blocks blk1, blk2, blk3
 print("Aggregate Verify [blk1, blk1, blk0], sig2: ", bls.AggregateVerify([pk0, pk1, pk2], [blk1, blk1, blk0], sig2))
-print("Aggregate Verify [blk1, blk1, blk0], agg_sig: ", bls.AggregateVerify([pk0, pk1, pk2], [blk1, blk1, blk0], sig2))
-print("Aggregate Verify [blk2, blk2, blk0], sig2: ", bls.AggregateVerify([pk0, pk1, pk2], [blk2, blk2, blk0], sig2))
-print("Aggregate Verify [blk3, blk3, blk0], sig2: ", bls.AggregateVerify([pk0, pk1, pk2], [blk3, blk3, blk0], sig2))
+print("Aggregate Verify [blk1, blk1, blk0], agg_sig: ", bls.AggregateVerify([pk0, pk1, pk2], [blk1, blk1, blk0], agg_sig))
+print("Aggregate Verify [blk2, blk2, blk0], agg_sig: ", bls.AggregateVerify([pk0, pk1, pk2], [blk2, blk2, blk0], agg_sig))
+print("Aggregate Verify [blk3, blk3, blk0], agg_sig: ", bls.AggregateVerify([pk0, pk1, pk2], [blk3, blk3, blk0], agg_sig))
 
